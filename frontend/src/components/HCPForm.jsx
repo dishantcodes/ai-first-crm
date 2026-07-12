@@ -38,7 +38,7 @@ function HCPForm() {
         phone: ""
       });
 
-    } catch (error) {
+   } catch (error) {
   console.log("Full Error:", error);
   console.log("Response:", error.response);
   console.log("Data:", error.response?.data);
