@@ -39,10 +39,14 @@ function HCPForm() {
       });
 
     } catch (error) {
-      console.log(error.response?.data);
-      alert("Error Adding HCP");
-    }
-  };
+  console.log("Full Error:", error);
+  console.log("Response:", error.response);
+  console.log("Data:", error.response?.data);
+
+  alert(
+    JSON.stringify(error.response?.data || error.message)
+  );
+}
 
 
   return (
